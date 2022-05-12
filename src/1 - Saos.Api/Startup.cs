@@ -1,4 +1,8 @@
-﻿namespace MinhaAPI
+﻿using DevIO.Data.Context;
+using Microsoft.EntityFrameworkCore;
+using Saos.Api.Configuration;
+
+namespace MinhaAPI
 {
     public class Startup : IStartup
     {
@@ -11,10 +15,19 @@
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<MeuDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });
+
             services.AddControllers();
 
+            services.AddAutoMapper(typeof(Startup));
+            
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+
+            services.ResolveDependencies();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)
