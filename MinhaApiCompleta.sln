@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevIO.Business", "src\DevIO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevIO.Data", "src\DevIO.Data\DevIO.Data.csproj", "{BF245E77-3F26-4995-AAA5-83E4A75F4767}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1 - Saos.Api", "src\1 - Saos.Api\1 - Saos.Api.csproj", "{A4E16681-3689-4A12-ADE9-EB2B5B5F222A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Saos.Api", "src\1 - Saos.Api\1-Saos.Api.csproj", "{A4E16681-3689-4A12-ADE9-EB2B5B5F222A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
