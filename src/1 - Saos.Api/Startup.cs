@@ -25,9 +25,11 @@ namespace MinhaAPI
             services.AddAutoMapper(typeof(Startup));
             
             services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
+            
 
             services.ResolveDependencies();
+
+            services.AddSwaggerGen();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)
